@@ -15,6 +15,12 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css" />
   <link rel="stylesheet" href="./css/main.css">
 
+  <!-- Swiper.js -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+
+  <script defer src="./js/main.js"></script>
+
   <!--
     ~ 767px : 모바일
     768px ~ 1023px : 태블릿
@@ -50,7 +56,29 @@
 
   <!-- BODY -->
   <body>
-    
+    <section class="banner">
+      <div class="inner">
+        <div class="swiper">
+          <!-- Additional required wrapper -->
+          <div class="swiper-wrapper">
+            <!-- Slides -->
+            <div class="swiper-slide"><a href="javascript:void(0)"><img src="./images/banner_img_1.png" alt="banner_img_1"></a></div>
+            <div class="swiper-slide"><a href="javascript:void(0)"><img src="./images/banner_img_2.png" alt="banner_img_2"></a></div>
+            <div class="swiper-slide"><a href="javascript:void(0)"><img src="./images/banner_img_3.png" alt="banner_img_3"></a></div>
+            <div class="swiper-slide"><a href="javascript:void(0)"><img src="./images/banner_img_4.png" alt="banner_img_4"></a></div>
+            <div class="swiper-slide"><a href="javascript:void(0)"><img src="./images/banner_img_5.png" alt="banner_img_5"></a></div>
+          </div>
+
+          <!-- If we need pagination -->
+          <div class="swiper-pagination"></div>
+          <button type="button" class="pause-button"></button>
+        
+          <!-- If we need navigation buttons -->
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-button-next"></div>
+        </div>
+      </div>
+    </section>
   </body>
 
   <!-- FOOTER -->
