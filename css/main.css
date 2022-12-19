@@ -25,7 +25,7 @@ a {
 }
 
 .inner {
-  width: 1200px;
+  max-width: 1200px;
   margin: 0 auto;
   position: relative;
 }
@@ -43,7 +43,7 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-
+  overflow: auto;
   background-color: #b9acc9;
 }
 
@@ -95,7 +95,12 @@ header .sub-menu .sub-menu__wrapper {
 }
 
 header .sub-menu .sub-menu__wrapper .sub-menu__items {
-  padding: 5px 15px;
+  width: 50px;
+}
+
+header .sub-menu .sub-menu__wrapper .sub-menu__items > a {
+  text-align: center;
+  font-size: 12px;
 }
 
 header .sub-menu .sub-menu__wrapper .sub-menu__items:hover > a {
