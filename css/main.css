@@ -1,0 +1,33 @@
+/* COMMON */
+* {
+  box-sizing: border-box;
+}
+
+:root {
+  --color-text: #333;
+  --color-main: #6c3373;
+  --color-background: #fffff2;
+}
+
+body {
+  font-family: 'Gowun Dodum', sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.4;
+  color: var(--color-text);
+}
+
+a {
+  text-decoration: none;
+  color: var(--color-text) ;
+}
+
+.inner {
+  width: 1200px;
+  margin: 0 auto;
+  position: relative;
+}
+
+img {
+  display: block;
+}
