@@ -7,6 +7,7 @@
   --color-text: #333;
   --color-main: #6c3373;
   --color-background: #fffff2;
+  --swiper-theme-color: #6c3373 !important;
 }
 
 body {
@@ -39,6 +40,7 @@ header {
   width: 100%;
   height: 100px;
   position: fixed;
+  top: 0;
   z-index: 9;
   display: flex;
   justify-content: space-between;
@@ -111,3 +113,42 @@ header .sub-menu .sub-menu__wrapper .sub-menu__items:hover > a {
 /* main */
 
 /* banner */
+.banner {
+  margin-top: 100px;
+  height: 400px;
+}
+
+.banner .swiper {
+  position: relative;
+}
+
+.banner .swiper-wrapper {
+  align-items: center;
+}
+
+.banner .swiper-wrapper .swiper-slide img{
+  width: 100%;
+  height: 400px;
+}
+
+.banner .swiper .pause-button {
+  display: block;
+  width: 15px;
+  height: 15px;
+  background-color: rgba(255, 255, 255, 0.7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #000;
+  border-radius: 50%;
+}
+
+.banner .swiper .swiper-pagination-bullet {
+  width: 12px;
+  height: 12px;
+}
+
+
+.banner .swiper .pause-button .material-icons {
+  font-size: 5px;
+}
