@@ -35,7 +35,7 @@ img {
   display: block;
 }
 
-/* header */
+/* HEADER */
 header {
   width: 100%;
   height: 100px;
@@ -47,12 +47,15 @@ header {
   align-items: center;
   overflow: auto;
   background-color: #b9acc9;
+  box-shadow: 0 0 5px #222;
 }
 
+/* Logo */
 header .logo {
   margin-left: 20px;
 }
 
+/* Main Menu */
 header .main-menu .main-menu__wrapper {
   display: flex;
   justify-content: space-between;
@@ -91,6 +94,7 @@ header .main-menu .main-menu__wrapper .main-menu__items > a {
   font-size: 25px;
 }
 
+/* Sub Menu */
 header .sub-menu .sub-menu__wrapper {
   display: flex;
   margin-right: 20px;
@@ -110,9 +114,9 @@ header .sub-menu .sub-menu__wrapper .sub-menu__items:hover > a {
   font-weight: 700;
 }
 
-/* main */
+/* MAIN */
 
-/* banner */
+/* Banner */
 .banner {
   margin-top: 100px;
   height: 400px;
@@ -194,3 +198,5 @@ header .sub-menu .sub-menu__wrapper .sub-menu__items:hover > a {
   width: 45px;
   border-radius: 10px;
 }
+
+/* Search Area */
