@@ -1,16 +1,31 @@
-new Swiper('.banner .swiper', {
-  // Optional parameters
-  direction: 'horizontal', // 수평 슬라이드(기본값)
-  loop: true, // 반복 재생 여부
-  autoplay: { // 자동 재생 여부
-    delay: 5000 // 5초마다 슬라이드 바뀜
+const bannerSwiper = new Swiper('.banner .swiper', {
+  direction: 'horizontal',
+  loop: true,
+  autoplay: {
+    delay: 5000
   },
   pagination: {
-    el: '.banner .swiper-pagination', // 페이지 번호 요소
-    clickable: true, // 사용자의 페이지 번호 제어 여부
+    el: '.banner .swiper-pagination',
+    clickable: true,
   },
-  navigation: { // 이전, 다음 슬라이드 버튼 사용
+  navigation: {
     nextEl: '.banner .swiper-button-next',
     prevEl: '.banner .swiper-button-prev',
+  }
+});
+
+const bannerPauseBtnEl = document.querySelector('#banner-pause-button');
+const bannerPauseBtnSpan = bannerPauseBtnEl.querySelector('.material-icons');
+
+
+bannerPauseBtnEl.addEventListener('click', () => {
+  if (!bannerSwiper.autoplay.paused) {
+    bannerPauseBtnSpan.textContent = 'play_arrow';
+    bannerSwiper.autoplay.stop();
+    bannerSwiper.autoplay.paused = true;
+  } else {
+    bannerPauseBtnSpan.textContent = 'pause';
+    bannerSwiper.autoplay.start();
+    bannerSwiper.autoplay.paused = false;
   }
 });
