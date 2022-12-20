@@ -19,13 +19,11 @@ const bannerPauseBtnSpan = bannerPauseBtnEl.querySelector('.material-icons');
 
 
 bannerPauseBtnEl.addEventListener('click', () => {
-  if (!bannerSwiper.autoplay.paused) {
-    bannerPauseBtnSpan.textContent = 'play_arrow';
-    bannerSwiper.autoplay.stop();
-    bannerSwiper.autoplay.paused = true;
-  } else {
+  if (bannerSwiper.autoplay.paused) {
     bannerPauseBtnSpan.textContent = 'pause';
-    bannerSwiper.autoplay.start();
-    bannerSwiper.autoplay.paused = false;
+    bannerSwiper.autoplay.run();
+  } else {
+    bannerPauseBtnSpan.textContent = 'play_arrow';
+    bannerSwiper.autoplay.pause(5000);
   }
 });
