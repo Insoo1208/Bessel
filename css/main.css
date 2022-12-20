@@ -131,8 +131,32 @@ header .sub-menu .sub-menu__wrapper .sub-menu__items:hover > a {
   height: 400px;
 }
 
+.banner .swiper .pause-button .material-icons {
+  font-size: 5px;
+}
+
+.banner .swiper .swiper-button-next,
+.banner .swiper .swiper-button-prev {
+  width: 30px;
+  height: 30px;
+  border: none;
+  border-radius: 50%;
+  background-color: #fff;
+  box-shadow: 0px 2px 4px #333;
+}
+
+.banner .swiper .swiper-button-next::after,
+.banner .swiper .swiper-button-prev::after {
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.banner .swiper .pagination-wrpper {
+  background-color: rgba(255, 255, 255, 0.95);
+  border-radius: 50px;
+}
+
 .banner .swiper .pause-button {
-  display: block;
   width: 15px;
   height: 15px;
   background-color: rgba(255, 255, 255, 0.7);
@@ -148,7 +172,11 @@ header .sub-menu .sub-menu__wrapper .sub-menu__items:hover > a {
   height: 12px;
 }
 
+.banner .swiper .pagination-wrpper .swiper-pagination {
+  position: inherit;
+}
 
-.banner .swiper .pause-button .material-icons {
-  font-size: 5px;
+.banner .swiper .pagination-wrpper .swiper-pagination .swiper-pagination-bullet-active{
+  width: 45px;
+  border-radius: 10px;
 }
