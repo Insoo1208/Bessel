@@ -46,6 +46,13 @@ input, select {
   font-family: inherit;
 }
 
+
+h4 {
+  font-size: 45px;
+  padding: 10px 25px 30px;
+  height: 100px;
+}
+
 /* HEADER */
 header {
   width: 100%;
@@ -255,12 +262,6 @@ header .sub-menu .sub-menu__wrapper .sub-menu__items:hover > a {
   height: 550px;
 }
 
-#best-seller h4 {
-  font-size: 45px;
-  padding: 10px 25px 30px;
-  height: 100px;
-}
-
 #best-seller .bs__wrapper {
   display: flex;
   height: 450px;
@@ -428,4 +429,61 @@ header .sub-menu .sub-menu__wrapper .sub-menu__items:hover > a {
 
 #best-seller .bs__wrapper .bs--list .bs-list-item__wrapper .bs-list-items .writer {
   width: 20%;
+}
+
+/* New Book */
+#new .inner{
+  height: 700px;
+}
+
+#new .new-wrapper {
+  height: 600px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+#new .new-wrapper .new-contents {
+  width: 30%;
+  display: flex;
+  border: 2px solid var(--color-main);
+  background-color: #fff;
+  border-radius: 3px;
+}
+
+#new .new-wrapper .new-contents > a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 15px;
+}
+
+#new .new-wrapper .new-contents > a img {
+  width: 100px;
+  height: 200px;
+}
+
+
+#new .new-wrapper .new-contents > .span-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  padding: 15px;
+}
+
+#new .new-wrapper .new-contents > .span-wrapper span {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  word-break: keep-all;
+
+}
+
+#new .new-wrapper .new-contents > .span-wrapper .title {
+  -webkit-line-clamp: 2;
+}
+#new .new-wrapper .new-contents > .span-wrapper .contents {
+  -webkit-line-clamp: 3;
 }
