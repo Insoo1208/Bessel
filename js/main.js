@@ -31,7 +31,7 @@ bannerPauseBtnEl.addEventListener('click', () => {
 // Best Seller
 const bsSwipeEls = document.querySelectorAll('.swipe-menu-wrapper');
 const bsMenuEls = document.querySelectorAll('.bs-list-nav > span');
-const bsListEl = document.querySelectorAll('.bs-list-item__wrapper');
+const bsListEl = document.querySelector('.bs-list-item__wrapper');
 const bsListItemsEls = document.querySelectorAll('.bs-list-items > li');
 
 function removeActive(target) {
@@ -56,7 +56,7 @@ bsMenuEls.forEach((bsMenuEl, index) => {
     removeActive(bsListItemsEls);
     addActive(bsListItemsEls[index*10]);
 
-    bsListEl[0].style.transform = `translateX(-${index * 396}px)`;
+    bsListEl.style.transform = `translateX(-${index * 396}px)`;
     bsSwipeEls[index].style.transform = `translateX(0)`;
   });
 });
