@@ -8,6 +8,7 @@
   --color-main: #6c3373;
   --color-background: #fffff2;
   --swiper-theme-color: #6c3373 !important;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -250,7 +251,7 @@ header .sub-menu .sub-menu__wrapper .sub-menu__items:hover > a {
 /* Best Seller */
 
 #best-seller .inner {
-  height: 700px;
+  height: 550px;
 }
 
 #best-seller h4 {
@@ -261,7 +262,7 @@ header .sub-menu .sub-menu__wrapper .sub-menu__items:hover > a {
 
 #best-seller .bs__wrapper {
   display: flex;
-  height: 600px;
+  height: 450px;
   column-gap: 2%;
 }
 
@@ -297,17 +298,23 @@ header .sub-menu .sub-menu__wrapper .sub-menu__items:hover > a {
 #best-seller .bs--view .swipe-menu .swipe-menu-wrapper .swipe-menu-slide > a,
 #best-seller .bs--view .swipe-menu .swipe-menu-wrapper .swipe-menu-slide > .span-wrapper {
   width: 37.5%;
+  height: 100%;
+}
+
+#best-seller .bs--view .swipe-menu .swipe-menu-wrapper .swipe-menu-slide > a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 #best-seller .bs--view .swipe-menu .swipe-menu-wrapper .swipe-menu-slide > a > img {
-  width: 100%;
-  height: 450px;
+  width: 225px;
+  height: 350px;
 }
 
 #best-seller .bs--view .swipe-menu .swipe-menu-wrapper .swipe-menu-slide > .span-wrapper {
   display: flex;
   flex-direction: column;
-  row-gap: 100px;
   padding: 15px;
 }
 
