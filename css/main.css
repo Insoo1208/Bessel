@@ -19,8 +19,6 @@ body {
   line-height: 1.4;
   color: var(--color-text);
   background-color: var(--color-background);
-
-  height: 2000px;
 }
 
 a {
@@ -46,12 +44,12 @@ input, select {
   font-family: inherit;
 }
 
-
 h4 {
   font-size: 45px;
   padding: 10px 25px 30px;
   height: 100px;
 }
+
 
 /* HEADER */
 header {
@@ -69,10 +67,12 @@ header {
   box-shadow: 0 0 5px #222;
 }
 
+
 /* Logo */
 header .logo {
   margin-left: 20px;
 }
+
 
 /* Main Menu */
 header .main-menu .main-menu__wrapper {
@@ -113,6 +113,7 @@ header .main-menu .main-menu__wrapper .main-menu__items > a {
   font-size: 25px;
 }
 
+
 /* Sub Menu */
 header .sub-menu .sub-menu__wrapper {
   display: flex;
@@ -133,7 +134,9 @@ header .sub-menu .sub-menu__wrapper .sub-menu__items:hover > a {
   font-weight: 700;
 }
 
+
 /* MAIN */
+
 
 /* Banner */
 .banner {
@@ -218,6 +221,7 @@ header .sub-menu .sub-menu__wrapper .sub-menu__items:hover > a {
   border-radius: 10px;
 }
 
+
 /* Search Area */
 #search-area .inner {
   height: 300px;
@@ -256,8 +260,8 @@ header .sub-menu .sub-menu__wrapper .sub-menu__items:hover > a {
   font-size: 20px;
 }
 
-/* Best Seller */
 
+/* Best Seller */
 #best-seller .inner {
   height: 550px;
 }
@@ -375,7 +379,6 @@ header .sub-menu .sub-menu__wrapper .sub-menu__items:hover > a {
   font-weight: 700;
 }
 
-
 #best-seller .bs__wrapper .bs--list .bs-list-item__wrapper {
   display: flex;
   column-gap: 10px;
@@ -431,6 +434,7 @@ header .sub-menu .sub-menu__wrapper .sub-menu__items:hover > a {
   width: 20%;
 }
 
+
 /* New Book */
 #new .inner{
   height: 700px;
@@ -464,7 +468,6 @@ header .sub-menu .sub-menu__wrapper .sub-menu__items:hover > a {
   height: 200px;
 }
 
-
 #new .new-wrapper .new-contents > .span-wrapper {
   display: flex;
   flex-direction: column;
@@ -478,7 +481,6 @@ header .sub-menu .sub-menu__wrapper .sub-menu__items:hover > a {
   text-overflow: ellipsis;
   overflow: hidden;
   word-break: keep-all;
-
 }
 
 #new .new-wrapper .new-contents > .span-wrapper .title {
@@ -486,4 +488,22 @@ header .sub-menu .sub-menu__wrapper .sub-menu__items:hover > a {
 }
 #new .new-wrapper .new-contents > .span-wrapper .contents {
   -webkit-line-clamp: 3;
+}
+
+
+/* Genre */
+#genre .inner{
+  height: 700px;
+}
+
+
+/* AI */
+#ai .inner {
+  height: 550px;
+}
+
+
+/* Event */
+#event .inner {
+  height: 350px;
 }
