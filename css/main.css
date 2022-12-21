@@ -5,6 +5,7 @@
 
 :root {
   --color-text: #333;
+  --color-text-light: #e5e5e5;
   --color-main: #5dc19b;
   --color-main-light: #9FCCBB;
   --color-background: #fffff3;
@@ -537,4 +538,45 @@ header .sub-menu .sub-menu__wrapper .sub-menu__items:hover > a {
 /* Event */
 #event .inner {
   height: 350px;
+}
+
+
+/* Footer */
+footer{
+  background-color: #555;
+  text-align: center;
+  color: var(--color-text-light);
+  font-size: 14px;
+}
+
+footer .inner {
+  position: relative;
+}
+
+footer .social-media {
+  width: 400px;
+  padding: 15px;
+  display: flex;
+  justify-content: space-evenly;
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+
+footer .social-media img {
+  width: 50px;
+  height: 50px;
+}
+
+footer .span-wrapper {
+  padding: 90px 0 10px;
+}
+
+footer .span-wrapper span {
+  margin: 0 5px;
+}
+
+footer .copyright {
+  padding-bottom: 10px;
 }
