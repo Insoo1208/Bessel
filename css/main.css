@@ -481,6 +481,7 @@ header .sub-menu .sub-menu__wrapper .sub-menu__items:hover > a {
   text-overflow: ellipsis;
   overflow: hidden;
   word-break: keep-all;
+  cursor: default;
 }
 
 #new .new-wrapper .new-contents > .span-wrapper .title {
