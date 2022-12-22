@@ -106,3 +106,24 @@ bsListItemsEls.forEach((bsListItemEl, index) => {
     bsSwipeEls[parseInt(index/10)].style.transform = `translateX(-${index % 10 * 780}px)`;
   });
 });
+
+// Genre
+const menuWrapper = document.querySelectorAll('.main-list__wrapper');
+const subMenuEls = document.querySelectorAll('.main-list .sub-menu > li');
+const contentEls = document.querySelectorAll('.contents-wrapper');
+
+menuWrapper.forEach(wrapperEl => {
+  wrapperEl.addEventListener('click', () => {
+    wrapperEl.classList.toggle('active');
+  })
+});
+
+subMenuEls.forEach((subMenuEl, index) => {
+  subMenuEl.addEventListener('click', () => {
+    removeActive(subMenuEls);
+    addActive(subMenuEl);
+
+    removeActive(contentEls);
+    addActive(contentEls[index]);
+  })
+});
