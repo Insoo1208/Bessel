@@ -104,6 +104,12 @@ const contentEls = document.querySelectorAll('.contents-wrapper');
 menuWrapper.forEach(wrapperEl => {
   wrapperEl.addEventListener('click', () => {
     wrapperEl.classList.toggle('active');
+
+    if (wrapperEl.classList.contains('active')) {
+      wrapperEl.querySelector('.material-icons').textContent = 'arrow_drop_up';
+    } else {
+      wrapperEl.querySelector('.material-icons').textContent = 'arrow_drop_down';
+    }
   })
 });
 
