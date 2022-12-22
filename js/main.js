@@ -15,18 +15,55 @@ const bannerSwiper = new Swiper('.banner .swiper', {
   }
 });
 
+// event
+const eventSwiper = new Swiper('#event .swiper', {
+  direction: 'horizontal',
+  loop: true,
+  autoplay: {
+    delay: 5000
+  },
+  pagination: {
+    el: '#event .swiper-pagination',
+    clickable: true,
+  },
+  navigation: {
+    nextEl: '#event .swiper-button-next',
+    prevEl: '#event .swiper-button-prev',
+  }
+});
+
 const bannerPauseBtnEl = document.querySelector('#banner-pause-button');
 const bannerPauseBtnSpan = bannerPauseBtnEl.querySelector('.material-icons');
 
-bannerPauseBtnEl.addEventListener('click', () => {
-  if (bannerSwiper.autoplay.paused) {
-    bannerPauseBtnSpan.textContent = 'pause';
-    bannerSwiper.autoplay.run();
-  } else {
-    bannerPauseBtnSpan.textContent = 'play_arrow';
-    bannerSwiper.autoplay.pause(5000);
-  }
-});
+const eventPauseBtnEl = document.querySelector('#event-pause-button');
+const eventPauseBtnSpan = eventPauseBtnEl.querySelector('.material-icons');
+
+function swiperPause(swiper, btn, span) {
+  btn.addEventListener('click', () => {
+    if (swiper.autoplay.paused) {
+      span.textContent = 'pause';
+      swiper.autoplay.run();
+    } else {
+      span.textContent = 'play_arrow';
+      swiper.autoplay.pause(5000);
+    }
+  })
+};
+
+swiperPause(bannerSwiper, bannerPauseBtnEl, bannerPauseBtnSpan);
+swiperPause(eventSwiper, eventPauseBtnEl, eventPauseBtnSpan);
+
+// function swiperPause(swiper, span) {
+//   if (swiper.autoplay.paused) {
+//     span.textContent = 'pause';
+//     swiper.autoplay.run();
+//   } else {
+//     span.textContent = 'play_arrow';
+//     swiper.autoplay.pause(5000);
+//   }
+// };
+// 
+// bannerPauseBtnEl.addEventListener('click', swiperPause(bannerSwiper, bannerPauseBtnSpan));
 
 // Best Seller
 const bsSwipeEls = document.querySelectorAll('.swipe-menu-wrapper');

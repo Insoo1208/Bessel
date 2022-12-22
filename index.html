@@ -16,12 +16,17 @@
 
   <!-- Reset CSS -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css" />
+  
+  <!-- Swiper.css -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
+  
+  <!-- Main CSS -->
   <link rel="stylesheet" href="./css/main.css">
 
   <!-- Swiper.js -->
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
   <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
 
+  <!-- Main js -->
   <script defer src="./js/main.js"></script>
 
   <!--
@@ -666,6 +671,67 @@
     <section id="genre">
       <div class="inner">
         <h4>장르별 추천</h4>
+        <div class="genre-wrapper">
+          <div class="genre-list">
+            <div class="genre-list__wrapper">
+              <ul class="main-menu">
+                <li class="main-list active">
+                  <div class="main-list__wrapper">
+                    <span>국내도서</span>
+                    <span class="material-icons">arrow_drop_down</span>
+                  </div>
+                  <ul class="sub-menu">
+                    <li class="active">소설/시/희곡</li>
+                    <li>인문학</li>
+                    <li>자기계발</li>
+                    <li>만화</li>
+                  </ul>
+                </li>
+                <li class="main-list">
+                  <div class="main-list__wrapper">
+                    <span>외국도서</span>
+                    <span class="material-icons">arrow_drop_down</span>
+                  </div>
+                  <ul class="sub-menu">
+                    <li>소설/시/희곡</li>
+                    <li>에세이</li>
+                    <li>여행</li>
+                    <li>과학/수학/생태</li>
+                  </ul>
+                </li>
+                <li class="main-list">
+                  <div class="main-list__wrapper">
+                    <span>eBook</span>
+                    <span class="material-icons">arrow_drop_down</span>
+                  </div>
+                  <ul class="sub-menu">
+                    <li>소설/시/희곡</li>
+                    <li>인문학</li>
+                    <li>자기계발</li>
+                    <li>예술/대중문화</li>
+                  </ul>
+                </li>
+                <li class="main-list">
+                  <div class="main-list__wrapper">
+                    <span>음반</span>
+                    <span class="material-icons">arrow_drop_down</span>
+                  </div>
+                  <ul class="sub-menu">
+                    <li>가요</li>
+                    <li>월드뮤직</li>
+                    <li>클래식</li>
+                    <li>LP</li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="genre-items">
+            <div class="genre-items__wrapper">
+              
+            </div>
+          </div>
+        </div>
       </div>
     </section>
 
@@ -702,14 +768,59 @@
         </div>
       </div>
     </section>
-  </main>
 
-  <!-- Event -->
-  <section id="event">
-    <div class="inner">
-      <h4>이벤트</h4>
+    <!-- Event -->
+    <section id="event">
+      <div class="inner">
+        <h4>이벤트</h4>
+      <span class="more">+ 더보기</span>
+      <div class="swiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <a href="javascript:void(0)">
+              <div class="span-wrapper">
+                <span class="title">도서 1 + 1 이벤트</span>
+                <span class="contents">보고싶었던 책 마음껏 보자!</span>
+                <span class="sub-contents">22.12.20 ~ 23.03.31</span>
+              </div>
+              <img src="./images/event_banner_1.png" alt="event_banner_1">
+            </a>
+          </div>
+          <div class="swiper-slide">
+            <a href="javascript:void(0)">
+              <div class="span-wrapper">
+                <span class="title">2022년 Bessel 선정 BEST 20</span>
+                <span class="contents">올해의 인기있었던 책을 10% 할인 된 가격으로~</span>
+                <span class="sub-contents">22.12.01 ~ 23.01.31</span>
+              </div>
+              <img src="./images/event_banner_2.png" alt="event_banner_2">
+            </a>
+          </div>
+          <div class="swiper-slide">
+            <a href="javascript:void(0)">
+              <div class="span-wrapper">
+                <span class="title">SF 소설 특별전</span>
+                <span class="contents">공상과학의 세계로 떠나보아요<br>SF 소설 할인가</span>
+                <span class="sub-contents">22.11.13 ~ 22.12.31</span>
+              </div>
+              <img src="./images/event_banner_3.png" alt="event_banner_3">
+            </a>
+          </div>
+        </div>
+
+        <div class="pagination-wrpper">
+          <div class="swiper-pagination"></div>
+          <button type="button" id="event-pause-button">
+            <span class="material-icons">pause</span>
+          </button>
+        </div>
+
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+      </div>
     </div>
-  </section>
+    </section>
+  </main>
 
   <!-- FOOTER -->
   <footer>
@@ -743,5 +854,6 @@
       </div>
     </div>
   </footer>
+  
 </body>
 </html>

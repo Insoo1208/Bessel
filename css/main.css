@@ -52,6 +52,13 @@ h4 {
   cursor: default;
 }
 
+.more {
+  position: absolute;
+  top: 35px;
+  right: 5px;
+  font-size: 14px;
+  font-weight: 700;
+}
 
 /* HEADER */
 header {
@@ -186,7 +193,8 @@ header .sub-menu .sub-menu__wrapper .sub-menu__items:hover > a {
   z-index: 1;
 }
 
-#banner-pause-button {
+#banner-pause-button,
+#event-pause-button {
   width: 15px;
   height: 15px;
   background-color: rgba(255, 255, 255, 0.7);
@@ -203,7 +211,8 @@ header .sub-menu .sub-menu__wrapper .sub-menu__items:hover > a {
   z-index: 1;
 }
 
-#banner-pause-button .material-icons {
+#banner-pause-button .material-icons,
+#event-pause-button .material-icons {
   font-size: 5px;
 }
 
@@ -500,19 +509,91 @@ header .sub-menu .sub-menu__wrapper .sub-menu__items:hover > a {
   height: 700px;
 }
 
+#genre .genre-wrapper {
+  width: 100%;
+  height: 600px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#genre .genre-wrapper .genre-list {
+  width: 35%;
+}
+
+#genre .genre-wrapper .genre-items {
+  width: 60%;
+}
+
+#genre .genre-wrapper .genre-list .genre-list__wrapper {
+  height: 100%;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
+#genre .genre-wrapper .genre-list,
+#genre .genre-wrapper .genre-items {
+  height: 90%;
+  margin: 10px;
+  padding: 20px 15px;
+  border: 2px solid var(--color-main);
+  border-radius: 15px;
+  background-color: #fff;
+}
+
+#genre .genre-wrapper .genre-list .main-menu .main-list .main-list__wrapper {
+  font-weight: 700;
+  font-size: 24px;
+  position: relative;
+  padding: 5px 0 8px;
+  cursor: pointer;
+}
+
+#genre .genre-wrapper .genre-list .main-menu .main-list.active .main-list__wrapper {
+  box-shadow: 0 4px 4px -4px var(--color-text);
+}
+
+
+#genre .genre-wrapper .genre-list .main-menu .main-list__wrapper .material-icons {
+  font-size: 30px;
+  position: absolute;
+  top: 3px;
+  right: 15px;
+  cursor: pointer;
+}
+
+#genre .genre-wrapper .genre-list .main-menu .main-list.active .sub-menu {
+  display: block;
+}
+
+#genre .genre-wrapper .genre-list .sub-menu {
+  display: none;
+}
+
+#genre .genre-wrapper .genre-list .sub-menu > li {
+  font-weight: 400;
+  font-size: 18px;
+  padding: 5px 0 3px;
+  cursor: pointer;
+}
+
+#genre .genre-wrapper .genre-list .sub-menu > li.active {
+  color: var(--color-main);
+}
+
+#genre .genre-wrapper .genre-items .genre-items__wrapper {
+  height: 100%;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
+
+
 
 /* AI */
 #ai .inner {
   height: 450px;
   position: relative;
-}
-
-#ai .more {
-  position: absolute;
-  top: 35px;
-  right: 5px;
-  font-size: 14px;
-  font-weight: 700;
 }
 
 #ai .ai-wrapper{
@@ -550,6 +631,73 @@ header .sub-menu .sub-menu__wrapper .sub-menu__items:hover > a {
 /* Event */
 #event .inner {
   height: 350px;
+}
+
+#event .swiper .swiper-wrapper .swiper-slide .span-wrapper {
+  position: absolute;
+  width: 40%;
+  height: 100%;
+  top: 0;
+  left: 50px;
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-end;
+  background-color: rgba(255, 255, 255, 0.7);
+}
+
+#event .swiper .swiper-wrapper .swiper-slide .span-wrapper span {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  word-break: keep-all;
+  text-align: right;
+}
+
+#event .swiper .swiper-wrapper .swiper-slide .span-wrapper .title {
+  font-size: 24px;
+  font-weight: 700;
+}
+
+#event .swiper .swiper-wrapper .swiper-slide .span-wrapper .contents {
+  font-size: 20px;
+}
+
+#event .swiper .swiper-wrapper .swiper-slide img {
+  width: 1100px;
+  height: 200px;
+  border-radius: 20px;
+  margin: 0 50px;
+}
+
+#event .swiper .pagination-wrpper {
+  background-color: rgba(255, 255, 255, 0.95);
+  border-radius: 50px;
+  position: absolute;
+  bottom: 10px;
+  right: 75px;
+  width: 230px;
+  height: 23px;
+  z-index: 1;
+}
+
+#event .swiper .swiper-pagination-bullet {
+  width: 15px;
+  height: 15px;
+}
+
+#event .swiper .pagination-wrpper .swiper-pagination.swiper-pagination-bullets {
+  position: absolute;
+  bottom: 0;
+  z-index: 1;
+}
+
+#event .swiper .pagination-wrpper .swiper-pagination .swiper-pagination-bullet-active{
+  width: 45px;
+  border-radius: 10px;
 }
 
 
