@@ -38,32 +38,20 @@ const bannerPauseBtnSpan = bannerPauseBtnEl.querySelector('.material-icons');
 const eventPauseBtnEl = document.querySelector('#event-pause-button');
 const eventPauseBtnSpan = eventPauseBtnEl.querySelector('.material-icons');
 
-function swiperPause(swiper, btn, span) {
-  btn.addEventListener('click', () => {
-    if (swiper.autoplay.paused) {
-      span.textContent = 'pause';
-      swiper.autoplay.run();
-    } else {
-      span.textContent = 'play_arrow';
-      swiper.autoplay.pause(5000);
-    }
-  })
+function swiperPause(swiper, span) {
+  if (swiper.autoplay.paused) {
+    span.textContent = 'pause';
+    swiper.autoplay.run();
+  } else {
+    span.textContent = 'play_arrow';
+    swiper.autoplay.pause(5000);
+  }
 };
 
-swiperPause(bannerSwiper, bannerPauseBtnEl, bannerPauseBtnSpan);
-swiperPause(eventSwiper, eventPauseBtnEl, eventPauseBtnSpan);
+bannerPauseBtnEl.addEventListener('click', () => {
+  swiperPause(bannerSwiper, bannerPauseBtnSpan)
+});
 
-// function swiperPause(swiper, span) {
-//   if (swiper.autoplay.paused) {
-//     span.textContent = 'pause';
-//     swiper.autoplay.run();
-//   } else {
-//     span.textContent = 'play_arrow';
-//     swiper.autoplay.pause(5000);
-//   }
-// };
-// 
-// bannerPauseBtnEl.addEventListener('click', swiperPause(bannerSwiper, bannerPauseBtnSpan));
 
 // Best Seller
 const bsSwipeEls = document.querySelectorAll('.swipe-menu-wrapper');
@@ -106,6 +94,7 @@ bsListItemsEls.forEach((bsListItemEl, index) => {
     bsSwipeEls[parseInt(index/10)].style.transform = `translateX(-${index % 10 * 780}px)`;
   });
 });
+
 
 // Genre
 const menuWrapper = document.querySelectorAll('.main-list__wrapper');

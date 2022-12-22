@@ -680,6 +680,7 @@ header .sub-menu .sub-menu__wrapper .sub-menu__items:hover > a {
   height: 30px;
   margin-top: 8px;
   overflow: hidden;
+  cursor: pointer;
 }
 
 
