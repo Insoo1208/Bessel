@@ -70,4 +70,18 @@
 
 
 
+  /* New */
+  #new .inner {
+    height: 950px;
+  }
+
+  #new .new-wrapper {
+    row-gap: 20px;
+    height: 850px;
+  }
+
+  #new .new-wrapper .new-contents {
+    width: 45%;
+  }
+
 }
