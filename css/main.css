@@ -619,6 +619,7 @@ header .sub-menu .sub-menu__wrapper .sub-menu__items:hover > a {
   top: 15px;
   left: 160px;
   font-size: 30px;
+  cursor: default;
 }
 
 #genre .genre-wrapper .genre-items .contents__items .writer {
@@ -627,17 +628,20 @@ header .sub-menu .sub-menu__wrapper .sub-menu__items:hover > a {
   top: 65px;
   left: 160px;
   font-size: 20px;
+  cursor: default;
 }
 
 #genre .genre-wrapper .genre-items .contents__items .price {
   position: absolute;
   bottom: 25px;
   left: 160px;
+  cursor: default;
 }
 
 #genre .genre-wrapper .genre-items .contents__items .more {
   top: 15px;
   right: 15px;
+  cursor: pointer;
 }
 
 
