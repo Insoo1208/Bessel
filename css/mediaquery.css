@@ -39,11 +39,11 @@
 
   /* Best Seller */
   #best-seller .inner {
-    height: 400px;
+    height: 450px;
   }
   
   #best-seller .bs__wrapper {
-    height: 300px;
+    height: 350px;
     column-gap: 1%;
   }
 
@@ -66,6 +66,26 @@
   
   #best-seller .bs--view .swipe-menu .swipe-menu-wrapper .swipe-menu-slide > .span-wrapper .contents {
     font-size: 12px;
+  }
+
+  #best-seller .bs__wrapper .bs--list .bs--list__wrapper .bs-list-nav {
+    height: 40px;
+  }
+
+  #best-seller .bs__wrapper .bs--list .bs--list__wrapper .bs-list-nav > span {
+    font-size: 16px;
+  }
+
+  #best-seller .bs__wrapper .bs--list .bs-list-item__wrapper {
+    height: 310px;
+  }
+
+  #best-seller .bs__wrapper .bs--list .bs-list-item__wrapper .bs-list-items > li {
+    height: 29px;
+  }
+
+  #best-seller .bs__wrapper .bs--list .bs-list-item__wrapper .bs-list-items > li > span {
+    font-size: 14px;
   }
 
 
