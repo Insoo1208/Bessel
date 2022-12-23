@@ -75,12 +75,10 @@ header {
   box-shadow: 0 0 5px #222;
 }
 
-
 /* Logo */
 header .logo {
   margin-left: 20px;
 }
-
 
 /* Main Menu */
 header .main-menu .main-menu__wrapper {
@@ -140,6 +138,11 @@ header .sub-menu .sub-menu__wrapper .sub-menu__items > a {
 header .sub-menu .sub-menu__wrapper .sub-menu__items:hover > a {
   color: var(--color-main);
   font-weight: 700;
+}
+
+/* Hamburger */
+.hamburger {
+  display: none;
 }
 
 

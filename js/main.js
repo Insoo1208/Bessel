@@ -2,6 +2,18 @@
 const tabletMedia = window.matchMedia('screen and (min-width: 768px) and (max-width: 1200px)');
 
 
+// hamburger
+const hamburgerEl = document.querySelector('.hamburger');
+const spanEls = hamburgerEl.querySelectorAll('span');
+const headerEl = document.querySelector('header');
+
+hamburgerEl.addEventListener('click', () => {
+  spanEls.forEach(target => {
+    target.classList.toggle('active');
+  });
+  headerEl.classList.toggle('active');
+})
+
 
 // Banner
 const bannerSwiper = new Swiper('.banner .swiper', {
