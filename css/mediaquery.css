@@ -141,4 +141,17 @@
     font-size: 14px;
   }
 
+  /* Event */
+  #event .swiper .swiper-wrapper .swiper-slide img {
+    width: 650px;
+  }
+
+  #event .swiper .swiper-wrapper .swiper-slide .span-wrapper .title {
+    font-size: 18px;
+    font-weight: 700;
+  }
+  
+  #event .swiper .swiper-wrapper .swiper-slide .span-wrapper .contents {
+    font-size: 15px;
+  }
 }
