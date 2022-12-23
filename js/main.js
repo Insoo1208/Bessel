@@ -1,5 +1,7 @@
 // matchMedia
+const pcMedia = window.matchMedia('screen and (min-width: 1201px)');
 const tabletMedia = window.matchMedia('screen and (min-width: 768px) and (max-width: 1200px)');
+const mobileMedia = window.matchMedia('screen and (max-width: 767px)');
 
 
 // hamburger
@@ -100,8 +102,10 @@ bsMenuEls.forEach((bsMenuEl, index) => {
 
     if (tabletMedia.matches){
       bsListEl.style.transform = `translateX(-${index * 244}px)`;
-    } else {
+    } else if (pcMedia.matches) {
       bsListEl.style.transform = `translateX(-${index * 396}px)`;
+    } else if (mobileMedia.matches) {
+      bsListEl.style.transform = `translateX(-${index * (bsListEl.offsetWidth) / 3}px)`;
     }
     bsSwipeEls[index].style.transform = `translateX(0)`;
   });
@@ -114,7 +118,7 @@ bsListItemsEls.forEach((bsListItemEl, index) => {
 
     if (tabletMedia.matches){
       bsSwipeEls[parseInt(index/10)].style.transform = `translateX(-${index % 10 * 485}px)`;
-    } else {
+    } else if (pcMedia.matches) {
       bsSwipeEls[parseInt(index/10)].style.transform = `translateX(-${index % 10 * 780}px)`;
     }
   });
