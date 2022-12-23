@@ -4,6 +4,65 @@ const tabletMedia = window.matchMedia('screen and (min-width: 768px) and (max-wi
 const mobileMedia = window.matchMedia('screen and (max-width: 767px)');
 
 
+// Menu Scroll
+const mainMenuItemEls = document.querySelectorAll('.main-menu__items');
+
+mainMenuItemEls.forEach((mainMenuItemEl, index) => {
+  mainMenuItemEl.addEventListener('click', () => {
+    switch (index) {
+      case 0:
+        if (pcMedia.matches || tabletMedia.matches){
+          window.scrollTo(0, 400);
+        }
+        break;
+      case 1:
+        if (pcMedia.matches || tabletMedia.matches){
+          window.scrollTo(0, 700);
+        } else if (mobileMedia.matches){
+          window.scrollTo(0, 200);
+        }
+        break;
+      case 2:
+        if (pcMedia.matches){
+          window.scrollTo(0, 1250);
+        } else if (tabletMedia.matches){
+          window.scrollTo(0, 1150);
+        } else {
+          window.scrollTo(0, 750);
+        }
+        break;
+      case 3:
+        if (pcMedia.matches){
+          window.scrollTo(0, 1950);
+        } else if (tabletMedia.matches){
+          window.scrollTo(0, 2100);
+        } else {
+          window.scrollTo(0, 1350);
+        }
+        break;
+      case 4:
+        if (pcMedia.matches){
+          window.scrollTo(0, 2650);
+        } else if (tabletMedia.matches){
+          window.scrollTo(0, 2800);
+        } else {
+          window.scrollTo(0, 1950);
+        }
+        break;
+      case 5:
+        if (pcMedia.matches){
+          window.scrollTo(0, 3100);
+        } else if (tabletMedia.matches){
+          window.scrollTo(0, 3250);
+        } else {
+          window.scrollTo(0, 2420);
+        }
+        break;
+    }
+  });
+});
+
+
 // hamburger
 const hamburgerEl = document.querySelector('.hamburger');
 const spanEls = hamburgerEl.querySelectorAll('span');
