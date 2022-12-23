@@ -264,7 +264,7 @@
     display: none;
   }
 
-  header .main-menu .main-menu__wrapper .main-menu__items > div.mini-search {
+  header .main-menu .main-menu__wrapper .main-menu__items > div.mini-search-all {
     display: block;
     height: 30px;
     display: flex;
@@ -272,7 +272,7 @@
     align-items: center;
   }
 
-  header .main-menu .main-menu__wrapper .main-menu__items > div.mini-search input {
+  header .main-menu .main-menu__wrapper .main-menu__items > div.mini-search-all input {
     width: 250px;
   }
 
