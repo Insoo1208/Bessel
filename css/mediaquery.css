@@ -447,6 +447,23 @@
   }
 
 
+  /* Move Top */
+  .move-top {
+    bottom: 20px;
+    right: 20px;
+  }
+  
+  .move-top button {
+    width: 35px;
+    height: 35px;
+  }
+  
+  .move-top button span {
+    font-size: 20px;
+  }
+
+
+
   /* Footer */
   footer .social-media {
     width: 100%;

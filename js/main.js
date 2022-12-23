@@ -63,6 +63,28 @@ mainMenuItemEls.forEach((mainMenuItemEl, index) => {
 });
 
 
+// Move Top
+const toTopEl = document.querySelector('.move-top');
+
+window.addEventListener('scroll', function () {
+  if (window.scrollY > 500){
+    gsap.to(toTopEl, 0.4, {
+      opacity: 1,
+    });
+  } else {
+    gsap.to(toTopEl, 0.4, {
+      opacity: 0,
+    });
+  }
+});
+
+toTopEl.addEventListener('click', () => {
+  gsap.to(window, 0.4, {
+    scrollTo: 0,
+  });
+});
+
+
 // hamburger
 const hamburgerEl = document.querySelector('.hamburger');
 const spanEls = hamburgerEl.querySelectorAll('span');
