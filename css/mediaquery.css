@@ -105,33 +105,40 @@
 
 
   /* Genre */
-#genre .genre-wrapper .genre-items .contents__items img {
-  width: 125px;
-  height: 175px;
-}
+  #genre .genre-wrapper .genre-items .contents__items img {
+    width: 125px;
+    height: 175px;
+  }
 
-#genre .genre-wrapper .genre-items .contents__items .title {
-  width: 45%;
-  left: 145px;
-  font-size: 18px;
-  font-weight: 700;
-}
+  #genre .genre-wrapper .genre-items .contents__items .title {
+    width: 45%;
+    left: 145px;
+    font-size: 18px;
+    font-weight: 700;
+  }
 
-#genre .genre-wrapper .genre-items .contents__items .writer {
-  width: 40%;
-  left: 145px;
-  font-size: 14px;
-}
+  #genre .genre-wrapper .genre-items .contents__items .writer {
+    width: 40%;
+    left: 145px;
+    font-size: 14px;
+  }
 
-#genre .genre-wrapper .genre-items .contents__items .price {
-  bottom: 20px;
-  left: 145px;
-}
+  #genre .genre-wrapper .genre-items .contents__items .price {
+    bottom: 20px;
+    left: 145px;
+  }
 
-#genre .genre-wrapper .genre-items .contents__items .more {
-  top: 2px;
-  right: 10px;
-  font-size: 12px;
-}
+  #genre .genre-wrapper .genre-items .contents__items .more {
+    top: 2px;
+    right: 10px;
+    font-size: 12px;
+  }
+
+
+  /* AI */
+  #ai .ai-contents span {
+    margin-top: 14px;
+    font-size: 14px;
+  }
 
 }
