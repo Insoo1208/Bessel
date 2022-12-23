@@ -804,6 +804,7 @@ footer{
   text-align: center;
   color: var(--color-text-light);
   font-size: 14px;
+  height: 190px;
 }
 
 footer .inner {
@@ -838,4 +839,11 @@ footer .span-wrapper span {
 footer .copyright {
   padding-bottom: 10px;
   cursor: default;
+}
+
+footer .inner p {
+  width: 88px;
+  height: 31px;
+  margin: auto;
+  margin-bottom: 10px;
 }
