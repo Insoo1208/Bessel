@@ -72,7 +72,7 @@ header {
   justify-content: space-between;
   align-items: center;
   background-color: #f1f1f1;
-  box-shadow: 0 0 5px #222;
+  box-shadow: 0 4px 4px -2px #555;
 }
 
 /* Logo */
@@ -119,7 +119,7 @@ header .main-menu .main-menu__wrapper .main-menu__items > a {
   font-size: 22px;
 }
 
-header .main-menu .main-menu__wrapper .main-menu__items > .mini-search {
+header .main-menu .main-menu__wrapper .main-menu__items > div.mini-search {
   display: none;
 }
 
