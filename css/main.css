@@ -119,6 +119,10 @@ header .main-menu .main-menu__wrapper .main-menu__items > a {
   font-size: 22px;
 }
 
+header .main-menu .main-menu__wrapper .main-menu__items > .mini-search {
+  display: none;
+}
+
 
 /* Sub Menu */
 header .sub-menu .sub-menu__wrapper {

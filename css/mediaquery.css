@@ -243,10 +243,6 @@
     padding: 5px;
   }
 
-  header .main-menu .main-menu__wrapper .main-menu__items > .mini-search {
-    display: none;
-  }
-
   header .main-menu .main-menu__wrapper .main-menu__items > div.mini-search {
     display: block;
     height: 30px;
