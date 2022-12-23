@@ -241,7 +241,7 @@
 
   header.active .main-menu {
     display: block;
-    height: 260px;
+    height: 300px;
   }
 
   header .main-menu .main-menu__wrapper {
@@ -252,12 +252,16 @@
   }
 
   header .main-menu .main-menu__wrapper > li:first-child {
-    width: 300px;
+    width: 290px;
     background-color: var(--color-main-light);
   }
 
   header .main-menu .main-menu__wrapper .main-menu__items {
     padding: 5px;
+  }
+
+  header .main-menu .main-menu__wrapper .main-menu__items .mini-search {
+    display: none;
   }
 
   header .main-menu .main-menu__wrapper .main-menu__items > div.mini-search {
@@ -278,10 +282,11 @@
 
   header.active .sub-menu {
     display: block;
+    height: 40px;
   }
 
   header .sub-menu .sub-menu__wrapper {
-    margin: 20px 0;
+    margin: 5px 0 15px;
   }
 
 
