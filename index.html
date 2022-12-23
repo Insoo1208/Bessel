@@ -53,9 +53,10 @@
       <ul class="main-menu__wrapper inner">
         <li class="main-menu__items">
           <a href="javascript:void(0)" class="mini-search">검색</a>
-          <span class="mini-search"></span>
-          <div class="mini-search">
-            <input type="text" placeholder="검색어를 입력하세요">
+          <span class="mini-search-all"></span>
+          <div class="mini-search-all">
+            <label for="sub-search">서브 통합검색</label>
+            <input type="text" placeholder="검색어를 입력하세요" id="sub-search">
             <span class="material-icons">search</span>
           </div>
         </li>
@@ -147,12 +148,14 @@
     <section id="search-area">
       <div class="inner">
         <div class="search-box">
+          <label for="main-search">통합검색 메뉴 선택</label>
           <select name="Search" id="main-search">
             <option value="book--search">통합 검색</option>
             <option value="book--title">제목 검색</option>
             <option value="book--writer">작가 검색</option>
           </select>
-          <input type="text">
+          <label for="search-all">통합검색</label>
+          <input type="text" id="search-all" placeholder="통합검색">
           <span class="material-icons">search</span>
         </div>
       </div>
@@ -161,7 +164,7 @@
     <!-- Best Seller -->
     <section id="best-seller">
       <div class="inner">
-        <h4>베스트 셀러</h4>
+        <h1>베스트 셀러</h1>
         <div class="bs__wrapper">
           <div class="bs--view">
             <div class="swipe-menu">
@@ -617,7 +620,7 @@
     <!-- New Book -->
     <section id="new">
       <div class="inner">
-        <h4>신작</h4>
+        <h1>신작</h1>
         <div class="new-wrapper">
           <div class="new-contents">
             <a href="javascript:void(0)">
@@ -686,7 +689,7 @@
     <!-- Genre -->
     <section id="genre">
       <div class="inner">
-        <h4>장르별 추천</h4>
+        <h1>장르별 추천</h1>
         <div class="genre-wrapper">
           <div class="genre-list">
             <div class="genre-list__wrapper">
@@ -1235,7 +1238,7 @@
     <!-- AI -->
     <section id="ai">
       <div class="inner">
-        <h4>AI 추천</h4>
+        <h1>AI 추천</h1>
         <a href="javascript:void(0)"><span class="more">+ 더보기</span></a>
         <div class="ai-wrapper">
           <div class="ai-contents">
@@ -1269,7 +1272,7 @@
     <!-- Event -->
     <section id="event">
       <div class="inner">
-        <h4>이벤트</h4>
+        <h1>이벤트</h1>
       <span class="more">+ 더보기</span>
       <div class="swiper">
         <div class="swiper-wrapper">

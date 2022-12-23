@@ -8,6 +8,7 @@
   --color-text-light: #e5e5e5;
   --color-main: #5dc19b;
   --color-main-light: #9FCCBB;
+  --color-main-dark: #285844;
   --color-background: #fffff3;
   --swiper-theme-color: #5dc19b !important;
   scroll-behavior: smooth;
@@ -45,7 +46,7 @@ input, select {
   font-family: inherit;
 }
 
-h4 {
+h1 {
   font-size: 45px;
   padding: 10px 25px 30px;
   height: 100px;
@@ -80,8 +81,9 @@ header {
 }
 
 /* Logo */
-header .logo {
+header h1.logo {
   margin-left: 20px;
+  padding: 0;
 }
 
 /* Main Menu */
@@ -556,6 +558,10 @@ header .sub-menu .sub-menu__wrapper .sub-menu__items:hover > a {
   font-size: 24px;
   position: relative;
   padding: 5px 0 8px;
+  background-color: var(--color-main-light);
+  border-radius: 8px;
+  margin-bottom: 10px;
+  padding-left: 5px;
   cursor: pointer;
 }
 
@@ -583,11 +589,13 @@ header .sub-menu .sub-menu__wrapper .sub-menu__items:hover > a {
   font-weight: 400;
   font-size: 18px;
   padding: 5px 0 3px;
+  padding-left: 15px;
   cursor: pointer;
 }
 
 #genre .genre-wrapper .genre-list .sub-menu > li.active {
-  color: var(--color-main);
+  color: var(--color-main-dark);
+  font-weight: 700;
 }
 
 #genre .genre-wrapper .genre-items .genre-items__wrapper {
