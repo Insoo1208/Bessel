@@ -103,7 +103,7 @@ const bannerSwiper = new Swiper('.banner .swiper', {
   direction: 'horizontal',
   loop: true,
   autoplay: {
-    delay: 5000
+    delay: 3000
   },
   pagination: {
     el: '.banner .swiper-pagination',
@@ -120,7 +120,7 @@ const eventSwiper = new Swiper('#event .swiper', {
   direction: 'horizontal',
   loop: true,
   autoplay: {
-    delay: 5000
+    delay: 3000
   },
   pagination: {
     el: '#event .swiper-pagination',
@@ -139,17 +139,20 @@ const eventPauseBtnEl = document.querySelector('#event-pause-button');
 const eventPauseBtnSpan = eventPauseBtnEl.querySelector('.material-icons');
 
 function swiperPause(swiper, span) {
-  if (swiper.autoplay.paused) {
-    span.textContent = 'pause';
-    swiper.autoplay.run();
-  } else {
+  if (swiper.autoplay.running) {
     span.textContent = 'play_arrow';
-    swiper.autoplay.pause(5000);
+    swiper.autoplay.stop();
+  } else {
+    span.textContent = 'pause';
+    swiper.autoplay.start();
   }
 };
 
 bannerPauseBtnEl.addEventListener('click', () => {
   swiperPause(bannerSwiper, bannerPauseBtnSpan)
+});
+eventPauseBtnEl.addEventListener('click', () => {
+  swiperPause(eventSwiper, eventPauseBtnSpan)
 });
 
 
