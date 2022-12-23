@@ -1,3 +1,8 @@
+// matchMedia
+const tabletMedia = window.matchMedia('screen and (min-width: 768px) and (max-width: 1200px)');
+
+
+
 // Banner
 const bannerSwiper = new Swiper('.banner .swiper', {
   direction: 'horizontal',
@@ -81,7 +86,11 @@ bsMenuEls.forEach((bsMenuEl, index) => {
     removeActive(bsListItemsEls);
     addActive(bsListItemsEls[index*10]);
 
-    bsListEl.style.transform = `translateX(-${index * 396}px)`;
+    if (tabletMedia.matches){
+      bsListEl.style.transform = `translateX(-${index * 244}px)`;
+    } else {
+      bsListEl.style.transform = `translateX(-${index * 396}px)`;
+    }
     bsSwipeEls[index].style.transform = `translateX(0)`;
   });
 });
@@ -91,7 +100,11 @@ bsListItemsEls.forEach((bsListItemEl, index) => {
     removeActive(bsListItemsEls);
     addActive(bsListItemEl);
 
-    bsSwipeEls[parseInt(index/10)].style.transform = `translateX(-${index % 10 * 780}px)`;
+    if (tabletMedia.matches){
+      bsSwipeEls[parseInt(index/10)].style.transform = `translateX(-${index % 10 * 485}px)`;
+    } else {
+      bsSwipeEls[parseInt(index/10)].style.transform = `translateX(-${index % 10 * 780}px)`;
+    }
   });
 });
 
