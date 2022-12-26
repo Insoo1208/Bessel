@@ -38,7 +38,7 @@
   <main>
     <section class="log-in">
       <div class="inner">
-        <h1>로그인</h1>
+        <h1>Log-in</h1>
 
         <div class="login-box">
           <label for="e-mail">
@@ -46,22 +46,29 @@
           </label>
           <label for="password">
             <input type="password" placeholder="비밀번호 영문/숫자/특수기호 12자 이상" id="password">
+            <span class="material-icons">visibility</span>
           </label>
         </div>
 
-        <button type="button">로그인</button>
-        <button type="button">회원가입</button>
+        <button type="button" class="btn--login">로그인</button>
+        <button type="button" class="btn--password">회원가입</button>
 
         <div class="login-sub-menu">
           <label for="email-save">
             <input type="checkbox" name="email-save" id="email-save">
           </label>
-          <span>아이디 찾기</span>
-          <span>비밀번호 찾기</span>
+          <span>이메일 저장</span>
+          <ul class="search-idpw">
+            <li><a href="javascript:void(0)">아이디 찾기</a></li>
+            <li><a href="javascript:void(0)">비밀번호 찾기</a></li>
+          </ul>
         </div>
 
         <div class="social-login">
-          <span>간편 로그인</span>
+          <div class="text-area">
+            <span class="text">간편 로그인</span>
+            <span class="line"></span>
+          </div>
           <button type="button" class="k-login">카카오톡으로 로그인</button>
           <button type="button" class="n-login">네이버로 로그인</button>
           <button type="button" class="g-login">Google로 로그인</button>
