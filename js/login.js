@@ -8,9 +8,9 @@ iconVisiEl.addEventListener('click', () => {
     loginPwEl.setAttribute('type', 'password');
     iconVisiEl.classList.toggle('active');
   } else {
-    iconVisiEl.classList.toggle('active');
     iconVisiEl.textContent = 'visibility';
     loginPwEl.setAttribute('type', 'text');
+    iconVisiEl.classList.toggle('active');
   }
 });
 
@@ -35,4 +35,4 @@ btnLoginEl.addEventListener('click', () => {
   }
   emailInput.value = '';
   passwordInput.value = '';
-})
+});
