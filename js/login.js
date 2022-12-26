@@ -13,16 +13,3 @@ iconVisiEl.addEventListener('click', () => {
     loginPwEl.setAttribute('type', 'text');
   }
 });
-
-// e-mail save
-const saveCheckEl = document.querySelector('#email-save');
-
-saveCheckEl.addEventListener('click', () => {
-  if(saveCheckEl.checked === true){
-    if(window.confirm('개인정보보호를 위해 개인 기기에서만 사용하세요.')){
-      saveCheckEl.checked = true;
-    } else {
-      saveCheckEl.checked = false;
-    }
-  }
-})

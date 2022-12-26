@@ -84,6 +84,8 @@ header {
 header h1.logo {
   margin-left: 20px;
   padding: 0;
+  width: 100%;
+  height: 100%;
 }
 
 /* Main Menu */
@@ -157,8 +159,6 @@ header .sub-menu .sub-menu__wrapper .sub-menu__items:hover > a {
 
 
 /* MAIN */
-
-
 /* Banner */
 .banner {
   margin-top: 100px;

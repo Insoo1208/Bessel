@@ -147,15 +147,7 @@ header .inner {
   position: relative;
 }
 
-.login-sub-menu #email-save {
-  width: 16px;
-  height: 16px;
-}
-
 .search-idpw {
-  position: absolute;
-  top: 0;
-  right: 0;
   display: flex;
 }
 
