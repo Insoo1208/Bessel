@@ -14,7 +14,13 @@ iconVisiEl.addEventListener('click', () => {
   }
 });
 
+const chkEmail = /[^A-Za-z0-9@._-]/g;
+const chkPW = /[^A-Za-z0-9!@#$%^&*()]/g;
+
 function inputEmail(e) {
-  console.log(e);
-  e.value = e.value.replace(/[^A-Za-z]/ig, '')
+  e.value = e.value.replace(chkEmail, '');
+}
+
+function inputPassword(e) {
+  e.value = e.value.replace(chkPW, '');
 }
