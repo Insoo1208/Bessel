@@ -1,0 +1,53 @@
+/* COMMON */
+* {
+  box-sizing: border-box;
+}
+
+:root {
+  --color-text: #333;
+  --color-text-light: #e5e5e5;
+  --color-main: #5dc19b;
+  --color-main-light: #9FCCBB;
+  --color-main-dark: #285844;
+  --color-background: #fffff3;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Gowun Dodum', sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.4;
+  color: var(--color-text);
+  background-color: var(--color-background);
+}
+
+a {
+  display: block;
+  text-decoration: none;
+  color: var(--color-text) ;
+}
+
+.inner {
+  max-width: 1200px;
+  margin: 0 auto;
+  position: relative;
+}
+
+img {
+  display: block;
+}
+
+input, select {
+  border: none;
+  outline: none;
+  background-color: transparent;
+  font-family: inherit;
+}
+
+h1 {
+  font-size: 45px;
+  padding: 10px 25px 30px;
+  height: 100px;
+  cursor: default;
+}
