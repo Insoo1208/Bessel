@@ -279,3 +279,47 @@ footer .inner p {
   margin: auto;
   margin-bottom: 10px;
 }
+
+@media screen and (max-width: 768px) {
+  .log-in .inner {
+    max-width: 330px;
+  }
+
+  .log-in .login-box input {
+    font-size: 14px;
+  }
+
+  .login-sub-menu .search-idpw li a {
+    font-size: 12px;
+  }
+
+  /* Footer */
+  footer {
+    height: 100%;
+    padding-bottom: 10px;
+  }
+  
+  footer .social-media {
+    width: 100%;
+    justify-content: center;
+    column-gap: 10px;
+  }
+
+  footer .social-media img {
+    width: 30px;
+    height: 30px;
+  }
+
+  footer .span-wrapper {
+    padding-top: 60px;
+  }
+
+  footer .span-wrapper span {
+    font-size: 10px;
+    margin: 0 3px;
+  }
+
+  footer .copyright {
+    font-size: 10px;
+  }
+}
