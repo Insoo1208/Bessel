@@ -13,3 +13,8 @@ iconVisiEl.addEventListener('click', () => {
     loginPwEl.setAttribute('type', 'text');
   }
 });
+
+function inputEmail(e) {
+  console.log(e);
+  e.value = e.value.replace(/[^A-Za-z]/ig, '')
+}
