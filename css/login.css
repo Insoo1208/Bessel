@@ -20,6 +20,11 @@ body {
   line-height: 1.4;
   color: var(--color-text);
   background-color: var(--color-background);
+
+  -webkit-user-select:none;
+  -moz-user-select:none;
+  -ms-user-select:none;
+  user-select:none
 }
 
 a {
@@ -48,6 +53,11 @@ input, select {
 button {
   border: none;
   font-family: inherit;
+  cursor: pointer;
+}
+
+span {
+  cursor: default;
 }
 
 /* Header */
@@ -85,30 +95,31 @@ header .inner {
   position: relative;
 }
 
-.log-in .login-box input{
+.log-in .login-box input {
   display: block;
   width: 100%;
   height: 50px;
-  border: 2px solid var(--color-main);
+  border: 2px solid var(--color-main-light);
   border-radius: 5px;
   font-size: 16px;
   padding-left: 10px;
 }
+
+.log-in .login-box input:focus {
+  border-color: var(--color-main-dark);
+}
+
 
 .log-in .login-box #password {
   margin-top: 15px;
 }
 
 .log-in .login-box .material-icons {
-  display: none;
   position: absolute;
   right: 15px;
   bottom: 13px;
-  color: var(--color-text);
-}
-
-.log-in .login-box .material-icons.active {
-  display: block;
+  color: #666;
+  cursor: pointer;
 }
 
 .log-in .btn--login,
@@ -150,6 +161,11 @@ header .inner {
 
 .login-sub-menu .search-idpw li a {
   padding: 0 10px;
+}
+
+.login-sub-menu .search-idpw li a:hover {
+  color: var(--color-main-dark);
+  font-weight: 700;
 }
 
 .login-sub-menu .search-idpw li + li {
