@@ -27,7 +27,7 @@ mainMenuItemEls.forEach((mainMenuItemEl, index) => {
           window.scrollTo(0, 1250);
         } else if (tabletMedia.matches){
           window.scrollTo(0, 1150);
-        } else {
+        } else if (mobileMedia.matches) {
           window.scrollTo(0, 750);
         }
         break;
@@ -36,7 +36,7 @@ mainMenuItemEls.forEach((mainMenuItemEl, index) => {
           window.scrollTo(0, 1950);
         } else if (tabletMedia.matches){
           window.scrollTo(0, 2100);
-        } else {
+        } else if (mobileMedia.matches) {
           window.scrollTo(0, 1350);
         }
         break;
@@ -45,7 +45,7 @@ mainMenuItemEls.forEach((mainMenuItemEl, index) => {
           window.scrollTo(0, 2650);
         } else if (tabletMedia.matches){
           window.scrollTo(0, 2800);
-        } else {
+        } else if (mobileMedia.matches) {
           window.scrollTo(0, 1950);
         }
         break;
@@ -54,7 +54,7 @@ mainMenuItemEls.forEach((mainMenuItemEl, index) => {
           window.scrollTo(0, 3100);
         } else if (tabletMedia.matches){
           window.scrollTo(0, 3250);
-        } else {
+        } else if (mobileMedia.matches) {
           window.scrollTo(0, 2420);
         }
         break;
