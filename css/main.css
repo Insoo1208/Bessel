@@ -84,9 +84,8 @@ header {
 header h1.logo {
   margin-left: 20px;
   padding: 0;
-  width: 100%;
-  height: 100%;
 }
+
 
 /* Main Menu */
 header .main-menu .main-menu__wrapper {
@@ -868,6 +867,10 @@ footer .inner p {
 
 
   /* Header */
+  header .logo img {
+    height: 75px;
+  }
+
   header .main-menu .main-menu__wrapper .main-menu__items {
     width: 85px;
   }
@@ -1010,8 +1013,6 @@ footer .inner p {
 }
 
 
-
-
 /* Mobile */
 @media screen and (max-width: 768px) {
   .inner { 
@@ -1039,8 +1040,8 @@ footer .inner p {
   }
 
   header .logo {
-    width: 90px;
-    height: 50px;
+    width: 100%;
+    height: 100%;
     position: absolute;
     top: 5px;
     left: 0;
@@ -1049,8 +1050,8 @@ footer .inner p {
   }
 
   header .logo img {
-    width: 100%;
-    height: 100%;
+    width: 90px;
+    height: 50px;
   }
 
   header .main-menu,
@@ -1135,6 +1136,7 @@ footer .inner p {
   header.active .sub-menu {
     display: block;
     height: 40px;
+    z-index: 10;
   }
 
   header .sub-menu .sub-menu__wrapper {
