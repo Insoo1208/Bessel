@@ -24,6 +24,89 @@
   <script defer src="./js/login.js"></script>
 </head>
 <body>
-  
+  <!-- Header -->
+  <header>
+    <div class="inner">
+      <!-- logo -->
+      <h1 class="logo">
+        <a href="/"><img src="./images/Logo.png" alt="Logo"></a>
+      </h1>
+    </div>
+  </header>
+
+  <!-- Main -->
+  <main>
+    <section class="log-in">
+      <div class="inner">
+        <h1>로그인</h1>
+
+        <div class="login-box">
+          <label for="e-mail"></label>
+          <input type="text" placeholder="이메일" id="e-mail">
+          <label for="password"></label>
+          <input type="password" placeholder="비밀번호 영문/숫자/특수기호 12자 이상" id="password">
+        </div>
+
+        <button type="button">로그인</button>
+        <button type="button">회원가입</button>
+
+        <div class="login-sub-menu">
+          <label for="email-save"></label>
+          <input type="checkbox" name="email-save" id="email-save">
+          <span>아이디 찾기</span>
+          <span>비밀번호 찾기</span>
+        </div>
+
+        <div class="social-login">
+          <span>간편 로그인</span>
+          <button type="button" class="k-login">카카오톡으로 로그인</button>
+          <button type="button" class="n-login">네이버로 로그인</button>
+          <button type="button" class="g-login">Google로 로그인</button>
+          <button type="button" class="a-login">Apple로 로그인</button>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <div class="inner">
+      <div class="social-media">
+        <a href="javascript:void(0)" class="icons">
+          <img src="./images/icon-insta.png" alt="icon-insta">
+        </a>
+        <a href="javascript:void(0)" class="icons">
+          <img src="./images/icon-fb.png" alt="icon-fb">
+        </a>
+        <a href="javascript:void(0)" class="icons">
+          <img src="./images/icon-tw.png" alt="icon-tw">
+        </a>
+        <a href="javascript:void(0)" class="icons">
+          <img src="./images/icon-yt.png" alt="icon-yt">
+        </a>
+        <a href="https://github.com/Insoo1208/Bessel" class="icons">
+          <img src="./images/icon-gh.png" alt="icon-gh">
+        </a>
+      </div>
+      <div class="span-wrapper">
+        <span>회사소개</span>
+        <span>인재채용</span>
+        <span style="font-weight: 700;">개인정보처리방침</span>
+        <span>홈페이지 이용약관</span>
+        <span>고객센터</span>
+      </div>
+      <div class="copyright">
+        <span>&copy; Bessel Corp. All Rights Reserved</span>
+      </div>
+      <p>
+        <a href="http://jigsaw.w3.org/css-validator/check/referer">
+            <img style="border:0;width:88px;height:31px"
+                src="http://jigsaw.w3.org/css-validator/images/vcss-blue"
+                alt="올바른 CSS입니다!" />
+            </a>
+        </p>
+    </div>
+  </footer>
+
 </body>
 </html>
