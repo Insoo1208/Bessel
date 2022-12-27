@@ -43,7 +43,7 @@ function bsView(data, index) {
 }
 
 function createUrl(obj) {
-  let url = `${path}?key=${apiKey}`;
+  let url = `http://cors-anywhere.herokuapp.com/${path}?key=${apiKey}`;
   for (const key in obj) {
     url += `&${key}=${obj[key]}`;
   }
