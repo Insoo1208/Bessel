@@ -27,6 +27,7 @@ btnLoginEl.addEventListener('click', () => {
   if (emailStr.test(emailInput.value)) {
     if (passwordStr.test(passwordInput.value)) {
       window.alert('로그인 성공');
+      location.href='/';
     } else {
       window.alert('로그인에 실패하였습니다.\n비밀번호는 영문/숫자/특수기호 포함 12자 이상이어야 합니다.\n특수기호는 !@#$%^&* 만 사용 가능합니다.');
     }

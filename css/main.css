@@ -151,6 +151,19 @@ header .sub-menu .sub-menu__wrapper .sub-menu__items:hover > a {
   font-weight: 700;
 }
 
+header .sub-menu .sub-menu__wrapper .my-menu{
+  display: none;
+}
+
+header .sub-menu .sub-menu__wrapper.logined .log-in,
+header .sub-menu .sub-menu__wrapper.logined .sign-up {
+  display: none;
+}
+
+header .sub-menu .sub-menu__wrapper.logined .my-menu {
+  display: block;
+}
+
 /* Hamburger */
 .hamburger {
   display: none;

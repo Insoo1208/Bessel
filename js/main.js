@@ -146,7 +146,7 @@ function swiperPause(swiper, span) {
     span.textContent = 'pause';
     swiper.autoplay.start();
   }
-};
+}
 
 bannerPauseBtnEl.addEventListener('click', () => {
   swiperPause(bannerSwiper, bannerPauseBtnSpan)
@@ -167,7 +167,7 @@ function removeActive(target) {
     if(child.classList.contains('active')){
       child.classList.remove('active');}
   });
-};
+}
 
 function addActive(target) {
   target.classList.add('active');
