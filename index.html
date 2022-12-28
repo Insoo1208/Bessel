@@ -35,7 +35,7 @@
 
   <!-- Main js -->
   <script defer src="./js/main.js"></script>
-  <!-- <script defer src="./js/api.js"></script> -->
+  <script defer src="./js/api.js"></script>
 
 
   <!--
@@ -59,7 +59,7 @@
           <span class="mini-search"></span>
           <div class="mini-search-all">
             <label for="sub-search"></label>
-              <input type="text" placeholder="검색어를 입력하세요" id="sub-search">
+            <input type="text" placeholder="검색어를 입력하세요" id="sub-search">
             <span class="material-icons">search</span>
           </div>
         </li>
@@ -154,14 +154,23 @@
         <div class="search-box">
           <label for="main-search"></label>
             <select name="Search" id="main-search">
-            <option value="book--search">통합 검색</option>
-            <option value="book--title">제목 검색</option>
-            <option value="book--writer">작가 검색</option>
+            <option value="all">통합 검색</option>
+            <option value="title">제목 검색</option>
+            <option value="person">작가 검색</option>
           </select>
           <label for="search-all"></label>
-          <input type="text" id="search-all" placeholder="통합검색">
+          <input type="text" id="search-all" placeholder="검색 할 내용을 입력해 주세요">
           <span class="material-icons">search</span>
         </div>
+
+      </div>
+    </section>
+
+    <!-- Result Area -->
+    <section id="result-area">
+      <div class="inner">
+        <h1>검색 결과</h1>
+        <ul class="contents-wrapper"></ul>
       </div>
     </section>
 
