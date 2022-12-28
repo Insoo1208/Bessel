@@ -4,7 +4,8 @@ const path = 'http://book.interpark.com/api/bestSeller.api'
 
 
 function bsView(data, index) {  
-  const bsSlide = document.querySelector('.swipe-menu-wrapper');
+  console.log(data.item, index);
+  const bsSlide = document.querySelectorAll('.swipe-menu-wrapper');
 
   const spanTitle = document.createElement('span');
   spanTitle.classList.add('title');
@@ -32,7 +33,7 @@ function bsView(data, index) {
 
   swipeMenu.append(imgLink, spanWrapper);
 
-  bsSlide.append(swipeMenu);
+  bsSlide[parseInt(index/10)].append(swipeMenu);
   // let html = `<div class="swipe-menu-slide">`;
   // html    += `<a href="javascript:void(0)">`;
   // html    += ``;
@@ -56,7 +57,7 @@ fetch(createUrl({
 }))
   .then((response) => response.json())
   .then((data) => {
-    for (let index = 0; index < 10; index++) {
-      bsView(data, index);
+    for (let index = 0; index < data.item.length; index++) {
+      bsView(index, data)
     }
   });
