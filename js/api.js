@@ -62,7 +62,7 @@ function createResultView(index, data) {
 
   const imgWrapper = document.createElement('a');
   imgWrapper.href = data.documents[index].url;
-  imgWrapper.target = '_blink';
+  imgWrapper.target = '_blank';
 
   const thumbnail = document.createElement('img');
   thumbnail.src = data.documents[index].thumbnail;
