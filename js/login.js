@@ -17,7 +17,7 @@ iconVisiEl.addEventListener('click', () => {
 
 // log in
 const emailStr = /^([a-zA-Z0-9_\-\.]+)@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.)|(([a-zA-Z0-9\-]+\.)+))([a-zA-Z]{2,4}|[0-9]{1,3})(\]?)$/
-const passwordStr = /[A-Za-z0-9!@#$%^&*()]{12}/g;
+const passwordStr = /[A-Za-z0-9!@#$%^&*]{12}/g;
 
 const btnLoginEl = document.querySelector('.btn--login');
 const emailInput = document.querySelector('input#e-mail');
