@@ -59,7 +59,7 @@
           <span class="mini-search"></span>
           <div class="mini-search-all">
             <label for="sub-search"></label>
-            <input type="text" placeholder="검색어를 입력하세요" id="sub-search">
+            <input type="text" placeholder="검색어를 입력하세요" id="sub-search" onKeypress="javascript:if(event.keyCode==13) {searchBook(mobileInput)}">
             <span class="material-icons">search</span>
           </div>
         </li>
@@ -159,7 +159,7 @@
             <option value="person">작가 검색</option>
           </select>
           <label for="search-all"></label>
-          <input type="text" id="search-all" placeholder="검색 할 내용을 입력해 주세요">
+          <input type="text" id="search-all" placeholder="검색 할 내용을 입력해 주세요" onKeypress="javascript:if(event.keyCode==13) {searchBook(inputBoxEl)}">
           <span class="material-icons">search</span>
         </div>
 

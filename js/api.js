@@ -85,9 +85,10 @@ function resetContents() {
   }
 }
 
-btnEl.addEventListener('click', () => {
-  if(inputBoxEl.value == ''){
-    return window.alert('검색어를 입력해주세요.');
+function searchBook(inputData) {
+  if(inputData.value == ''){
+    // return window.alert('검색어를 입력해주세요!');
+    return console.log('검색어를 입력해주세요!');
   }
   
   resultText.style.display = 'block';
@@ -97,7 +98,7 @@ btnEl.addEventListener('click', () => {
   contentArea.style.height = '600px';
 
   fetch(createFetchUrl({
-    query: inputBoxEl.value,
+    query: inputData.value,
     size: 7,
     target: setTarget(targetEl.value)
   }), {
@@ -111,34 +112,16 @@ btnEl.addEventListener('click', () => {
         createResultView(index, data);
       }
     });
+}
+
+btnEl.addEventListener('click', () => {
+  searchBook(inputBoxEl);
 });
 
 const mobileInput = document.querySelector('#sub-search');
 const mobileSearchBtn = document.querySelector('.mini-search-all .material-icons');
 
-mobileSearchBtn.addEventListener('click', () => {
-  if(mobileInput.value == ''){
-    return window.alert('검색어를 입력해주세요.');
-  }
-
-  resultText.style.display = 'block';
-
-  resetContents();
-
-  contentArea.style.height = '600px';
-
-  fetch(createFetchUrl({
-    query: mobileInput.value,
-    size: 7
-  }), {
-    headers: {
-      Authorization: `KakaoAK ${kakaoApiKey}`
-    }
-  })
-    .then((response) => response.json())
-    .then((data) => {
-      for (let index = 0; index < data.documents.length; index++) {
-        createResultView(index, data);
-      }
-    });
-})
+mobileSearchBtn.addEventListener('click', searchBook(mobileInput));
+// btnEl.addEventListener('click', () => {
+//   searchBook(mobileInput);
+// });
