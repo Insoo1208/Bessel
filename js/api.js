@@ -77,12 +77,6 @@ function createResultView(index, data) {
   contentsWrapper.append(contents);
 }
 
-function chkInputValue (target) {
-  if(target.value == ''){
-    return alert('검색어를 입력해주세요.');
-  }
-}
-
 function resetContents() {
   if (document.querySelectorAll('.contents')){
     document.querySelectorAll('.contents').forEach(target => {
@@ -92,8 +86,10 @@ function resetContents() {
 }
 
 btnEl.addEventListener('click', () => {
-  chkInputValue(inputBoxEl);
-
+  if(inputBoxEl.value == ''){
+    return window.alert('검색어를 입력해주세요.');
+  }
+  
   resultText.style.display = 'block';
 
   resetContents();
@@ -121,8 +117,10 @@ const mobileInput = document.querySelector('#sub-search');
 const mobileSearchBtn = document.querySelector('.mini-search-all .material-icons');
 
 mobileSearchBtn.addEventListener('click', () => {
-  chkInputValue(mobileInput);
-
+  if(inputBoxEl.value == ''){
+    return window.alert('검색어를 입력해주세요.');
+  }
+  
   resultText.style.display = 'block';
 
   resetContents();
