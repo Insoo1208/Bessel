@@ -23,7 +23,7 @@ const btnEl = document.querySelector('.search-box .material-icons');
 const targetEl = document.querySelector('#main-search');
 const contentArea = document.querySelector('#result-area .inner');
 const resultText = document.querySelector('#result-area h1');
-const contentsWrapper = document.querySelector('#result-area .contents-wrapper');
+const contentsWrapper = document.querySelector('#result-area .result-wrapper');
 
 function setTarget(data) {
   if (data == 'all') {
@@ -117,10 +117,10 @@ const mobileInput = document.querySelector('#sub-search');
 const mobileSearchBtn = document.querySelector('.mini-search-all .material-icons');
 
 mobileSearchBtn.addEventListener('click', () => {
-  if(inputBoxEl.value == ''){
+  if(mobileInput.value == ''){
     return window.alert('검색어를 입력해주세요.');
   }
-  
+
   resultText.style.display = 'block';
 
   resetContents();

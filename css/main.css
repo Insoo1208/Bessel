@@ -303,11 +303,21 @@ header .sub-menu .sub-menu__wrapper.logined .my-menu {
   overflow: hidden auto;
 }
 
+#result-area .inner::-webkit-scrollbar {
+  width: 6px;
+  background-color: transparent;
+}
+
+#result-area .inner::-webkit-scrollbar-thumb {
+  border-radius: 3px;
+  background-color: var(--color-main-dark);
+}
+
 #result-area .inner h1 {
   display: none;
 }
 
-#result-area .contents-wrapper {
+#result-area .result-wrapper {
   width: 600px;
   position: absolute;
   left: 0;
@@ -705,6 +715,16 @@ header .sub-menu .sub-menu__wrapper.logined .my-menu {
   height: 100%;
   overflow-x: hidden;
   overflow-y: auto;
+}
+
+#genre .genre-wrapper .genre-items .genre-items__wrapper::-webkit-scrollbar {
+  width: 6px;
+  background-color: transparent;
+}
+
+#genre .genre-wrapper .genre-items .genre-items__wrapper::-webkit-scrollbar-thumb {
+  border-radius: 3px;
+  background-color: var(--color-main-dark);
 }
 
 #genre .genre-wrapper .genre-items .genre-items__wrapper .contents-wrapper {
@@ -1120,7 +1140,7 @@ footer .inner p {
 /* Mobile */
 @media screen and (max-width: 768px) {
   .inner { 
-    width: 100%;
+    width: 95%;
   }
 
   h1 {
@@ -1258,6 +1278,11 @@ footer .inner p {
     height: 200px;
   }
 
+  .banner .inner {
+    width: 100%;
+  }
+
+
   .banner .swiper-wrapper .swiper-slide img{
     height: 200px;
   }
@@ -1280,15 +1305,19 @@ footer .inner p {
     width: 100%;
   }
 
-  #result-area .contents-wrapper {
+  #result-area .inner {
+    margin: 30px 0;
+  }
+
+  #result-area .result-wrapper {
     width: 85%;
   }
 
-  #result-area .contents-wrapper .contents {
+  #result-area .result-wrapper .contents {
     width: 100%;
   }
 
-  #result-area .contents-wrapper .title{
+  #result-area .result-wrapper .title{
     font-size: 14px;
   }
 
@@ -1324,10 +1353,20 @@ footer .inner p {
 
   #new .new-wrapper {
     height: 500px;
-    overflow-x: hidden;
-    overflow-y: auto;
+    overflow: hidden auto;
     row-gap: 10px;
   }
+
+  #new .new-wrapper::-webkit-scrollbar {
+    width: 4px;
+    background-color: transparent;
+  }
+
+  #new .new-wrapper::-webkit-scrollbar-thumb {
+    border-radius: 2px;
+    background-color: var(--color-main-dark);
+  }
+
 
   #new .new-wrapper .new-contents {
     width: 90%;
