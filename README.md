@@ -1,6 +1,6 @@
 # Bessel
 
-Bessel은 베스트셀러 정보와 기본적인 책 정보 검색을 위한 사이트입니다.
+Bessel은 베스트셀러 정보와 기본적인 책 정보 검색을 위한 사이트입니다.<br>
 https://bessel.netlify.app
 <hr>
 
